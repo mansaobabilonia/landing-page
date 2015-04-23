@@ -1,3 +1,11 @@
+<?php 
+
+	$residents = json_decode(file_get_contents("assets/residents.json"), true);
+	ksort($residents["current"]);
+	ksort($residents["former"]);
+
+?>
+
 <!DOCTYPE HTML>
 <html lang="en-US">
 	<head>
@@ -163,235 +171,59 @@
 
 				<div class="me-picture text-center animate_fade_in">
 
-					<!-- ITEM -->
-					<div class="item">
-						<!-- social icons -->
-						<span class="socials animated bounceIn">
-							<a target="_blank" href="https://www.facebook.com/luciano.coelho.3110" class="social fa fa-facebook"></a>
-						</span>
-						<!-- image -->
-						<img class="img-responsive" src="assets/images/people/lulu.png" width="200" height="200" alt="" />
-						<!-- name -->
-						<div class="member-name">
-							<h3>
-								Lulu
-								<small>???</small>
-							</h3>
-						</div>
-					</div>
-					<!-- /ITEM -->
+					<?php foreach($residents["current"] as $name => $data): ?>
 
-					<!-- ITEM -->
-					<div class="item">
-						<!-- social icons -->
-						<span class="socials animated bounceIn">
-							<a target="_blank" href="https://www.facebook.com/giovani.garuffi" class="social fa fa-facebook"></a>
-						</span>
-						<!-- image -->
-						<img class="img-responsive" src="assets/images/people/flyer.png" width="200" height="200" alt="" />
-						<!-- name -->
-						<div class="member-name">
-							<h3>
-								Flyer
-								<small>EC014</small>
-							</h3>
+						<!-- ITEM -->
+						<div class="item">
+							<!-- social icons -->
+							<span class="socials animated bounceIn">
+								<a target="_blank" href="https://www.facebook.com/<?php echo $data["facebook"]; ?>" class="social fa fa-facebook"></a>
+							</span>
+							<!-- image -->
+							<img class="img-responsive" src="http://graph.facebook.com/<?php echo $data["facebook"]; ?>/picture?width=200&height=200" width="200" height="200" alt="" />
+							<!-- name -->
+							<div class="member-name">
+								<h3>
+									<?php echo $name; ?>
+									<small><?php echo $data["course"]; ?></small>
+								</h3>
+							</div>
 						</div>
-					</div>
-					<!-- /ITEM -->
+						<!-- /ITEM -->
 
-					<!-- ITEM -->
-					<div class="item">
-						<!-- social icons -->
-						<span class="socials animated bounceIn">
-							<a target="_blank" href="https://www.facebook.com/rafael.barret" class="social fa fa-facebook"></a>
-						</span>
-						<!-- image -->
-						<img class="img-responsive" src="assets/images/people/zangado.png" width="200" height="200" alt="" />
-						<!-- name -->
-						<div class="member-name">
-							<h3>
-								Zangado
-								<small>EC014</small>
-							</h3>
-						</div>
-					</div>
-					<!-- /ITEM -->
+					<?php endforeach; ?>
 
-					<!-- ITEM -->
-					<div class="item">
-						<!-- social icons -->
-						<span class="socials animated bounceIn">
-							<a target="_blank" href="https://www.facebook.com/alan.corrales.773" class="social fa fa-facebook"></a>
-						</span>
-						<!-- image -->
-						<img class="img-responsive" src="assets/images/people/rosca.png" width="200" height="200" alt="" />
-						<!-- name -->
-						<div class="member-name">
-							<h3>
-								Rosca
-								<small>EC014</small>
-							</h3>
-						</div>
-					</div>
-					<!-- /ITEM -->
+				</div>
 
-					<!-- ITEM -->
-					<div class="item">
-						<!-- social icons -->
-						<span class="socials animated bounceIn">
-							<a target="_blank" href="https://www.facebook.com/guilerme.s.pereira" class="social fa fa-facebook"></a>
-						</span>
-						<!-- image -->
-						<img class="img-responsive" src="assets/images/people/zebu.png" width="200" height="200" alt="" />
-						<!-- name -->
-						<div class="member-name">
-							<h3>
-								Zebu
-								<small>EC012</small>
-							</h3>
-						</div>
-					</div>
-					<!-- /ITEM -->
+				<div class="divider"><!-- lines divider --></div>
 
-					<!-- ITEM -->
-					<div class="item">
-						<!-- social icons -->
-						<span class="socials animated bounceIn">
-							<a target="_blank" href="https://www.facebook.com/alisson.polidecarvalho" class="social fa fa-facebook"></a>
-						</span>
-						<!-- image -->
-						<img class="img-responsive" src="assets/images/people/alisson.png" width="200" height="200" alt="" />
-						<!-- name -->
-						<div class="member-name">
-							<h3>
-								Alisson
-								<small>EC011</small>
-							</h3>
-						</div>
-					</div>
-					<!-- /ITEM -->
+				<article class="text-center big-paragraph">
+					<p>Conheça os ex-moradores.</p>
+				</article>
 
-					<!-- ITEM -->
-					<div class="item">
-						<!-- social icons -->
-						<span class="socials animated bounceIn">
-							<a target="_blank" href="https://www.facebook.com/thiago.itagaki" class="social fa fa-facebook"></a>
-						</span>
-						<!-- image -->
-						<img class="img-responsive" src="assets/images/people/firmeza.png" width="200" height="200" alt="" />
-						<!-- name -->
-						<div class="member-name">
-							<h3>
-								Firmeza
-								<small>EC011</small>
-							</h3>
-						</div>
-					</div>
-					<!-- /ITEM -->
+				<div class="me-picture text-center animate_fade_in">
 
-					<!-- ITEM -->
-					<div class="item">
-						<!-- social icons -->
-						<span class="socials animated bounceIn">
-							<a target="_blank" href="https://www.facebook.com/arthur2502" class="social fa fa-facebook"></a>
-						</span>
-						<!-- image -->
-						<img class="img-responsive" src="assets/images/people/lyra.png" width="200" height="200" alt="" />
-						<!-- name -->
-						<div class="member-name">
-							<h3>
-								Lyra
-								<small>EC011</small>
-							</h3>
-						</div>
-					</div>
-					<!-- /ITEM -->
+					<?php foreach($residents["former"] as $name => $data): ?>
 
-					<!-- ITEM -->
-					<div class="item">
-						<!-- social icons -->
-						<span class="socials animated bounceIn">
-							<a target="_blank" href="https://www.facebook.com/there.s.no.place.like.127.0.0.1" class="social fa fa-facebook"></a>
-						</span>
-						<!-- image -->
-						<img class="img-responsive" src="assets/images/people/miguel.png" width="200" height="200" alt="" />
-						<!-- name -->
-						<div class="member-name">
-							<h3>
-								Miguel
-								<small>EC010</small>
-							</h3>
+						<!-- ITEM -->
+						<div class="item">
+							<!-- social icons -->
+							<span class="socials animated bounceIn">
+								<a target="_blank" href="https://www.facebook.com/<?php echo $data["facebook"]; ?>" class="social fa fa-facebook"></a>
+							</span>
+							<!-- image -->
+							<img class="img-responsive" src="http://graph.facebook.com/<?php echo $data["facebook"]; ?>/picture?width=200&height=200" width="200" height="200" alt="" />
+							<!-- name -->
+							<div class="member-name">
+								<h3>
+									<?php echo $name; ?>
+									<small><?php echo $data["course"]; ?></small>
+								</h3>
+							</div>
 						</div>
-					</div>
-					<!-- /ITEM -->
+						<!-- /ITEM -->
 
-					<!-- ITEM -->
-					<div class="item">
-						<!-- social icons -->
-						<span class="socials animated bounceIn">
-							<a target="_blank" href="https://www.facebook.com/iwolffinho" class="social fa fa-facebook"></a>
-						</span>
-						<!-- image -->
-						<img class="img-responsive" src="assets/images/people/igao.png" width="200" height="200" alt="" />
-						<!-- name -->
-						<div class="member-name">
-							<h3>
-								Igão
-								<small>EC010</small>
-							</h3>
-						</div>
-					</div>
-					<!-- /ITEM -->
-
-					<!-- ITEM -->
-					<div class="item">
-						<!-- social icons -->
-						<span class="socials animated bounceIn">
-							<a target="_blank" href="https://www.facebook.com/pili.antunes" class="social fa fa-facebook"></a>
-						</span>
-						<!-- image -->
-						<img class="img-responsive" src="assets/images/people/pilao.png" width="200" height="200" alt="" />
-						<!-- name -->
-						<div class="member-name">
-							<h3>
-								Pilão
-								<small>EC010</small>
-							</h3>
-						</div>
-					</div>
-					<!-- /ITEM -->
-
-					<!-- ITEM -->
-					<div class="item">
-						<!-- image -->
-						<img class="img-responsive" src="assets/images/people/guegs.png" width="200" height="200" alt="" />
-						<!-- name -->
-						<div class="member-name">
-							<h3>
-								Guegs
-								<small>EC010</small>
-							</h3>
-						</div>
-					</div>
-					<!-- /ITEM -->
-
-					<!-- ITEM -->
-					<div class="item">
-						<!-- social icons -->
-						<span class="socials animated bounceIn">
-							<a target="_blank" href="https://www.facebook.com/otavio.becker" class="social fa fa-facebook"></a>
-						</span>
-						<!-- image -->
-						<img class="img-responsive" src="assets/images/people/tito.png" width="200" height="200" alt="" />
-						<!-- name -->
-						<div class="member-name">
-							<h3>
-								Tito
-								<small>EC05</small>
-							</h3>
-						</div>
-					</div>
-					<!-- /ITEM -->
+					<?php endforeach; ?>
 
 				</div>
 
