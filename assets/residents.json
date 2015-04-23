@@ -1,0 +1,126 @@
+{
+	"current": {
+		"Firmeza" : {
+			"facebook" : "thiago.itagaki",
+			"course" : "EC011"
+		},
+		"Pili" : {
+			"facebook" : "pili.antunes",
+			"course" : "EC010"
+		},
+		"Igão" : {
+			"facebook" : "iwolffinho",
+			"course" : "EC010"
+		},
+		"Lyra" : {
+			"facebook" : "arthur.lyra",
+			"course" : "EC011"
+		},
+		"Miguel" : {
+			"facebook" : "there.s.no.place.like.127.0.0.1",
+			"course" : "CC010"
+		},
+		"Tito" : {
+			"facebook" : "otavio.becker",
+			"course" : "EC05"
+		},
+		"Carvalho" : {
+			"facebook" : "felipe.carvalho.775",
+			"course" : "EC013"
+		},
+		"Jump" : {
+			"facebook" : "JoaoPedroBToledo",
+			"course" : "CC014"
+		},
+		"Morto" : {
+			"facebook" : "rafael.ferigolo",
+			"course" : "CC014"
+		},
+		"Flyer" : {
+			"facebook" : "giovani.garuffi",
+			"course" : "EC014"
+		},
+		"Zangado" : {
+			"facebook" : "rafael.barret",
+			"course" : "EC014"
+		},
+		"Luciano" : {
+			"facebook" : "luciano.coelho.3110",
+			"course" : "FISICA012"
+		},
+		"Guegs" : {
+			"facebook" : null,
+			"course" : "EC010"
+		}
+	},
+	"former" : {
+		"Rosca" : {
+			"facebook" : "alan.corrales.773",
+			"course" : "EC014"
+		},
+		"Zebu" : {
+			"facebook" : "guilerme.s.pereira",
+			"course" : "EC012"
+		},
+		"Alisson" : {
+			"facebook" : "alisson.polidecarvalho",
+			"course" : "EC011"
+		},
+		"Seiji" : {
+			"facebook" : "andre.tamanaha",
+			"course" : "EC011"
+		},
+		"João Chencci" : {
+			"facebook" : "joao.chencci",
+			"course" : "EC011"
+		},
+		"Pelanza" : {
+			"facebook" : "guilhermezanelato",
+			"course" : "EC011"
+		},
+		"Maradona" : {
+			"facebook" : "matheus.pinheiro.395",
+			"course" : "EC011"
+		},
+		"Clito" : {
+			"facebook" : "Gabriel.Rolfsen",
+			"course" : "EC012"
+		},
+		"Colgate" : {
+			"facebook" : "lamarck.samuel",
+			"course" : "CC012"
+		},
+		"Gibo" : {
+			"facebook" : "gpersona",
+			"course" : "EC010"
+		},
+		"Sonda" : {
+			"facebook" : "luiseduardo14",
+			"course" : "EC012"
+		},
+		"Xavier" : {
+			"facebook" : "chico.xeivier",
+			"course" : "EC09"
+		},
+		"Aaron" : {
+			"facebook" : "aaron.granich.5",
+			"course" : "MEC/MEXICO"
+		},
+		"Zorba" : {
+			"facebook" : "fischer.henrique",
+			"course" : "EC011"
+		},
+		"Kim" : {
+			"facebook" : "lucas.kim.129",
+			"course" : "PROD/UFSCAR"
+		},
+		"Mogli" : {
+			"facebook" : "tejadalucas",
+			"course" : "EC09"
+		},
+		"Paolo" : {
+			"facebook" : "paolo.bns",
+			"course" : "CC09"
+		}
+	}
+}
